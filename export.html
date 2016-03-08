@@ -1,0 +1,38 @@
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.5/handlebars.min.js"></script>
+<script src="export.js"></script>
+<script id="comment-template" type="text/x-handlebars-template">---
+kind: {{{kind}}}
+author: {{{author}}}
+created: {{{created_utc}}}
+id: {{{id}}}
+name: {{{name}}}
+subreddit: {{{subreddit}}}
+subreddit_id : {{{subreddit_id}}}
+thread_id: {{{link_id}}}
+parent_comment: {{{parent_id}}}
+---
+
+{{{body}}}
+</script>
+<script id="thread-template" type="text/x-handlebars-template">---
+kind: {{{kind}}}
+author: {{{author}}}
+domain: {{{domain}}}
+is_self: {{{is_self}}}
+created: {{{created_utc}}}
+permalink: {{{permalink}}}
+id: {{{id}}}
+name: {{{name}}}
+subreddit: {{{subreddit}}}
+subreddit_id : {{{subreddit_id}}}
+title: {{{title}}}
+url: {{{url}}}
+---
+
+{{{selftext}}}
+</script>
+</head>
+</html>
